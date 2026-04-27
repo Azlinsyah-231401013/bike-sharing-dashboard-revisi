@@ -1,116 +1,23 @@
-# 🚲 Bike Sharing Dashboard
+# Bike Sharing Data Analysis Dashboard 🚲✨
 
-Dashboard interaktif berbasis **Streamlit** untuk menganalisis pengaruh **cuaca, musim, dan waktu** terhadap jumlah penyewaan sepeda pada periode **2011–2012**.
+## Deskripsi Proyek
+Proyek ini merupakan submission akhir untuk kelas **Belajar Analisis Data dengan Python** dari Dicoding (Coding Camp powered by DBS 2026). Proyek ini berfokus pada analisis dataset *Bike Sharing* untuk menggali *insight* bisnis yang berharga, meliputi proses *Data Wrangling*, *Exploratory Data Analysis* (EDA), *Advanced Analysis* (Clustering/Binning), dan pembuatan *dashboard* interaktif menggunakan Streamlit.
 
----
+## Pertanyaan Bisnis
+1. Bagaimana tren total peminjaman sepeda berdasarkan musim sepanjang tahun 2011 hingga 2012?
+2. Bagaimana perbandingan perilaku peminjaman antara pengguna kasual dan pengguna terdaftar pada hari kerja dibandingkan hari libur/akhir pekan?
 
-## 🌐 Demo Dashboard
+## Struktur Direktori
+- `/data`: Direktori ini berisi dataset mentah (`day.csv` dan `hour.csv`) yang digunakan dalam proyek.
+- `/dashboard`: Direktori ini berisi file `dashboard.py` yang digunakan untuk membuat dashboard interaktif menggunakan Streamlit.
+- `notebook.ipynb`: File ini berisi proses analisis data secara lengkap menggunakan Jupyter Notebook / Google Colab.
+- `requirements.txt`: File ini berisi daftar *library* yang dibutuhkan untuk menjalankan proyek ini.
+- `README.md`: File informasi mengenai proyek ini.
 
-👉 https://bike-sharing-dashboard-revisi-azlin.streamlit.app/
-
----
-
-## 📊 Fitur Utama
-
-* Analisis pengaruh kondisi cuaca terhadap penyewaan sepeda
-* Pola penyewaan berdasarkan jam
-* Perbandingan hari kerja vs akhir pekan
-* Filter berdasarkan tahun dan musim
-
----
-
-## 📁 Struktur Proyek
-
-```
-Submission Proyek Analisis Data/
-│
-├── dashboard/
-│   └── dashboard.py
-│
-├── data/
-│   ├── day.csv
-│   ├── hour.csv
-│   └── cleaned_hour.csv
-│
-├── notebook.ipynb
-├── requirements.txt
-├── url.txt
-└── README.md
-```
-
----
-
-## ⚙️ Cara Menjalankan Secara Lokal
-
-### 1. Clone Repository
+## Setup Environment - Anaconda
+Jika Anda menggunakan distribusi Anaconda, jalankan perintah berikut pada Anaconda Prompt:
 
 ```bash
-git clone https://github.com/Azlinsyah-231401013/bike-sharing-dashboard-revisi.git
-cd bike-sharing-dashboard-revisi
-```
-
----
-
-### 2. Setup Virtual Environment
-
-Buat virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Aktifkan virtual environment:
-
-**Windows:**
-
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux:**
-
-```bash
-source venv/bin/activate
-```
-
----
-
-### 3. Install Dependencies
-
-```bash
+conda create --name main-ds python=3.9
+conda activate main-ds
 pip install -r requirements.txt
-```
-
----
-
-### 4. Jalankan Dashboard
-
-```bash
-cd dashboard
-streamlit run dashboard.py
-```
-
----
-
-### 5. Buka di Browser
-
-```
-http://localhost:8501
-```
-
----
-
-## 📈 Insight Singkat
-
-* Penyewaan sepeda tertinggi terjadi saat **cuaca cerah**
-* Puncak penggunaan pada jam sibuk:
-
-  * 07.00–09.00
-  * 17.00–19.00
-* Hari kerja memiliki jumlah penyewaan lebih tinggi dibanding akhir pekan
-
----
-
-## 👤 Author
-
-**Azlinsyah Fadhilah Meran**
